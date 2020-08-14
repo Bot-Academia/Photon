@@ -1,4 +1,5 @@
 Aim: To create a local stored dashboard which will contain logs of activity over the web app.
+
 Utility: Pomodoro Clock, To-Do-list, TimeTable Maker, Goal setter, Money Target, Wishlist.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
