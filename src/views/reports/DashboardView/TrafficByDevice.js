@@ -30,7 +30,7 @@ const TrafficByDevice = ({ className, ...rest }) => {
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [63, 25, 12],
         backgroundColor: [
           colors.indigo[500],
           colors.red[600],
@@ -75,13 +75,13 @@ const TrafficByDevice = ({ className, ...rest }) => {
     },
     {
       title: 'Tablet',
-      value: 15,
+      value: 25,
       icon: TabletIcon,
       color: colors.red[600]
     },
     {
       title: 'Mobile',
-      value: 23,
+      value: 12,
       icon: PhoneIcon,
       color: colors.orange[600]
     }
