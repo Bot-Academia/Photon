@@ -19,7 +19,7 @@ const user = {
   city: 'New Delhi',
   country: 'India',
   jobTitle: 'Student Developer',
-  name: 'Navya Agarwal',
+  name: 'Gitty',
   timezone: 'GTM+5'
 };
 

@@ -35,8 +35,8 @@ const useStyles = makeStyles(() => ({
 const ProfileDetails = ({ className, ...rest }) => {
   const classes = useStyles();
   const [values, setValues] = useState({
-    firstName: 'Navya',
-    lastName: 'Agarwal',
+    firstName: 'gitty',
+    lastName: 'bot',
     email: 'demo@devias.io',
     phone: '',
     state: 'Delhi',

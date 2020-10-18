@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 class Form extends Component{
     state={
@@ -28,28 +30,14 @@ class Form extends Component{
 
     render(){
     return(
-        <div>
-            <input type="text" placeholder='Enter Task' onChange={this.change} value={this.state.todo.title} style={inputstyle}></input>
-            <input type='submit' onClick={this.onSubmit} value='Add' style={btn}></input>
-        </div>
-    );}
+        <form >
+            <TextField id="outlined-basic" label="Enter Task" variant="outlined" type="text" onChange={this.change} value={this.state.todo.title} />
+            <Button variant="contained" color="primary" onClick={this.onSubmit} >
+                ADD
+            </Button>
+        </form>
+     );}
     
-}
-
-const inputstyle={
-    height: '40px',
-    width: '200px',
-    textAlign: 'center'
-}
-
-const btn={
-    height: '40px',
-    width: '80px',
-    backgroundColor: '#0398fc',
-    borderRadius: '10px',
-    marginLeft: '10px',
-    borderColor : '#0398fc',
-    color: 'white'
 }
 
 export default Form;
