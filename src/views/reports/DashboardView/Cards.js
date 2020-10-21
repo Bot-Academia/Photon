@@ -23,7 +23,17 @@ class Cards extends Component{
 
     render(){
     return this.props.todos.map((todo,index)=>(
-            <li style={this.getStyle(todo.done)} key={index}><input type="checkbox"  aria-label="Checkbox" style={checkbox} onChange={()=>{this.checked(todo,index); this.getStyle(!todo.done); }} value={todo.done}></input>  {todo.title} <button onClick={()=>{this.props.remove(index)}} style={removebtn}>X</button></li>
+            <li style={this.getStyle(todo.done)} key={index}>
+            <input type="checkbox"  aria-label="Checkbox" 
+            style={checkbox} 
+            onChange={()=>{this.checked(todo,index); this.getStyle(!todo.done); }}
+             value={todo.done}>
+            </input>  
+            {todo.title} 
+            <button onClick={()=>{this.props.remove(index)}} style={removebtn}>
+                X
+            </button>
+            </li>
     ));}
 }
 
